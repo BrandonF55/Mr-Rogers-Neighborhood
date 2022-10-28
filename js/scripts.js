@@ -31,8 +31,7 @@ function checkformatch(element) {
   
 
   window.addEventListener('load', function (event) {
-    event.preventDefault();
   const form = document.getElementById('rogersForm').value;
   form.addEventListener('submit', checkformatch);
-  
+  event.preventDefault();
 }); 
