@@ -2,16 +2,15 @@
 
 let neighbor1 = [];
 
-const usernumbers = parseInt(document.querySelector('#numberinput')).valueOf;
+const usernumbers = document.querySelector('#numberinput');
 
 
 // while ( usernumer > 1)
 
 
-function checkformatch() {
+function checkformatch(element) {
   for (let i = 0; i <= usernumbers; i++) {
     const element = i.toString();
-    
     if (element.includes(1)) {
       neighbor1.push('Wont you be my neighbor?');
     }else if (element.includes(2)) {
@@ -25,13 +24,15 @@ function checkformatch() {
     }
       return checkformatch;   
   }
-    console.log(checkformatch)
+  
    
     // userinterface logic.
 
-
+  
 
   window.addEventListener('load', function (event) {
-  const form = document.getElementById('rogersForm');
+    event.preventDefault();
+  const form = document.getElementById('rogersForm').value;
   form.addEventListener('submit', checkformatch);
+  
 }); 
