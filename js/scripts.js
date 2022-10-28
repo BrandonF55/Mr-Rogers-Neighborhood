@@ -1,8 +1,8 @@
 // Business Logic 
 
-let neighbor1 = [];
+let neighbor1 = ['12343'];
 
-const usernumbers = parseInt(document.querySelector('#usernumbers')).valueOf;
+const usernumbers = parseInt(document.querySelector('#numberinput')).valueOf;
 
 
 // while ( usernumer > 1)
@@ -19,12 +19,12 @@ function checkformatch(element) {
       neighbor1.push('Beep!');
      } else {
       neighbor1.push(element);
-      
+
       }
     }
-      return neighbor1;   
+      return checkformatch;   
   }
-    console.log(neighbor1)
+    console.log(checkformatch)
    
     // userinterface logic.
 

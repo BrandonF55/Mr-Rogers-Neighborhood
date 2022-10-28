@@ -35,11 +35,14 @@ Expected output: when Chosing a number it should output a certain frase.
 
 Test: It should..... // this is the first text of checkformatch function.
 
-describe: 
+describe: CheckForMatch()
+
+test: picking a number from 1- 100
+code checkformatch
+expected: output: when choosing a number is should output a phrase but its failed and trying to figure it out.
 
 
-
-
+test It should .......// second test of the function has failed.
 
 
 ## Known Bugs
