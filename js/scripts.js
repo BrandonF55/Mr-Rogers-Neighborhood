@@ -4,7 +4,7 @@ let neighbor1 = [];
 let neighbor2 = [];
 let neighbor3 = [];
 
-const usernumbers = parseint(document.querySelector('#usernumbers')).val;
+const usernumbers = parseInt(document.querySelector('#usernumbers'));
 
 
 // while ( usernumer > 1)
@@ -18,7 +18,7 @@ function checkformatch(element) {
     }else if (element.includes(2)) {
       neighbor1.push('boop!'); 
     }else if (element.push(1)){
-      neighbor1.push('Beep');
+      neighbor1.push('Beep!');
      } else {
       neighbor1.push(element);
 
@@ -26,4 +26,10 @@ function checkformatch(element) {
     }
       return neighbor1;   
   }
-console.log(neighbor1);
+console.log('checkformatch')
+
+  window.addEventListener('load', function (event) {
+  const form = document.getElementById('rogersForm');
+  form.addEventListener('submit', checkformatch);
+  event.preventDefault();
+});
