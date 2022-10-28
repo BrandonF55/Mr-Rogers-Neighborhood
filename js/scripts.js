@@ -1,10 +1,8 @@
 // Business Logic 
 
 let neighbor1 = [];
-let neighbor2 = [];
-let neighbor3 = [];
 
-const usernumbers = parseInt(document.querySelector('#usernumbers'));
+const usernumbers = parseInt(document.querySelector('#usernumbers')).valueOf;
 
 
 // while ( usernumer > 1)
@@ -21,15 +19,18 @@ function checkformatch(element) {
       neighbor1.push('Beep!');
      } else {
       neighbor1.push(element);
-
+      
       }
     }
       return neighbor1;   
   }
-console.log('checkformatch')
+    console.log(neighbor1)
+   
+    // userinterface logic.
+
 
   window.addEventListener('load', function (event) {
   const form = document.getElementById('rogersForm');
   form.addEventListener('submit', checkformatch);
   event.preventDefault();
-});
+}); 
