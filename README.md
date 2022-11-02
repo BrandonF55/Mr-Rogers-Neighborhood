@@ -36,9 +36,19 @@ describe: CheckForMatch()
 test: picking a number from 1- 100
 code checkformatch
 expected: output: when choosing a number is should output a phrase but its failed and trying to figure it out.
-
-
 test It should .......// second test of the function has failed.
+
+Descibe: checkFormatch()
+
+test: picking a number from 1 - 100 and displaying a phrase.
+code:checkformatch
+expected: a phrase will appear once you make a choice of number from 1-100 and it will display a phrase.
+output: a phrase will appear after you choose a number.
+test it should ......// third test has passed.
+
+
+
+
 
 
 ## Known Bugs
